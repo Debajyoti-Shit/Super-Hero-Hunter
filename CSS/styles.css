@@ -1,0 +1,129 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/* adding background image */
+body {
+  background-image: url(../media/main-bg.jpg);
+  height: 100vh;
+
+}
+
+
+.search-container {
+  width: 500px !important;
+  padding: 50px;
+}
+
+
+.result-section h2 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.dp-img-index {
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+
+/* styling hero profile image */
+.dp-img {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border: 1px;
+  box-shadow: 0px 5px 10px 5px rgb(109, 105, 105);
+  margin-right: 20px;
+  row-gap: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#d-logo {
+  border-radius: 50%;
+  content: icon;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #20882e;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+/*  Alert type box displaying in the bottom of the screen */
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/*  Mobile Responsive  */
+@media only screen and (max-width: 768px) {
+  .search-container {
+    width: 100% !important;
+    padding: 50px;
+  }
+
+  div#superhero {
+    width: 100%;
+  }
+}
